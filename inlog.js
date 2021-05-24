@@ -1,3 +1,5 @@
+var fakeEmail = "rein@rein.it";
+var fakePassword = "abcd1234";
 // Wat doet een inlog formulier?
 
 // - [x] veld voor email -> HTML
@@ -17,8 +19,11 @@ knopje.addEventListener("click", function logIn() {
   var emailInput = document.getElementById("emailInput").value;
   var passwordInput = document.getElementById("passwordInput").value;
   console.log(emailInput, passwordInput);
+  var emailCorrect = emailInput === fakeEmail;
+  var passwordCorrect = passwordInput === fakePassword;
+  console.log("EMAIL CORRECT?", emailCorrect, passwordCorrect);
 });
-// - [ ] vergelijken -> wachtwoord correct?
+// - [x] vergelijken -> wachtwoord correct?
 // - [ ] if statement -> if(true) -> welkom else -> pech gehad
 
 // - foutmelding weergeven wanneer het wachtwoord niet klopt
