@@ -2,3 +2,7 @@ p {
   visibility: hidden;
   color: red;
 }
+
+#succes {
+  color: green;
+}

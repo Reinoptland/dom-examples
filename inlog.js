@@ -30,9 +30,12 @@ knopje.addEventListener("click", function logIn() {
     // - [x] hele inlog formulier even groeperen in een divje
     var loginForm = document.getElementById("login-form");
     loginForm.style.visibility = "hidden";
+    var errormessage = document.getElementById("error");
+    errormessage.style.visibility = "hidden";
     // - [x] divje selecteren en -> visibility hidden
-    // - [ ] boodschap op de pagina weergeven
-    console.log("WELKOM!");
+    // - [x] boodschap op de pagina weergeven
+    var succesMessage = document.getElementById("succes");
+    succesMessage.innerText = "Welkom " + fakeEmail;
   } else {
     // - foutmelding weergeven wanneer het wachtwoord niet klopt
     // - [x] visibility hidden in css
