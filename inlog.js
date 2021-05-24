@@ -11,9 +11,12 @@ var knopje = document.querySelector("button");
 // - [x] event listener toevoegen aan het knopje
 // - [x] ons eigen commando schrijven (functie)
 knopje.addEventListener("click", function logIn() {
-  console.log("HIER KOMT DE LOGICA");
+  //   console.log("HIER KOMT DE LOGICA");
+  // - [x] de inputvelden selecteren
+  var emailInput = document.getElementById("emailInput");
+  var passwordInput = document.getElementById("passwordInput");
+  console.log(emailInput, passwordInput);
 });
-// - [ ] de inputvelden selecteren
 // - [ ] de waarden van email en password uit de inputs halen
 // - [ ] vergelijken -> wachtwoord correct?
 // - [ ] if statement -> if(true) -> welkom else -> pech gehad
