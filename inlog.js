@@ -22,9 +22,15 @@ knopje.addEventListener("click", function logIn() {
   var emailCorrect = emailInput === fakeEmail;
   var passwordCorrect = passwordInput === fakePassword;
   console.log("EMAIL CORRECT?", emailCorrect, passwordCorrect);
+
+  if (emailCorrect && passwordCorrect) {
+    console.log("WELKOM!");
+  } else {
+    console.log("PECH GEHAD!");
+  }
 });
 // - [x] vergelijken -> wachtwoord correct?
-// - [ ] if statement -> if(true) -> welkom else -> pech gehad
+// - [x] if statement -> if(true) -> welkom else -> pech gehad
 
 // - foutmelding weergeven wanneer het wachtwoord niet klopt
 
