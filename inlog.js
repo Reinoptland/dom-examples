@@ -13,11 +13,11 @@ var knopje = document.querySelector("button");
 knopje.addEventListener("click", function logIn() {
   //   console.log("HIER KOMT DE LOGICA");
   // - [x] de inputvelden selecteren
-  var emailInput = document.getElementById("emailInput");
-  var passwordInput = document.getElementById("passwordInput");
+  // - [x] de waarden van email en password uit de inputs halen
+  var emailInput = document.getElementById("emailInput").value;
+  var passwordInput = document.getElementById("passwordInput").value;
   console.log(emailInput, passwordInput);
 });
-// - [ ] de waarden van email en password uit de inputs halen
 // - [ ] vergelijken -> wachtwoord correct?
 // - [ ] if statement -> if(true) -> welkom else -> pech gehad
 
