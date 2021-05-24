@@ -18,11 +18,9 @@ knopje.addEventListener("click", function logIn() {
   // - [x] de waarden van email en password uit de inputs halen
   var emailInput = document.getElementById("emailInput").value;
   var passwordInput = document.getElementById("passwordInput").value;
-  console.log(emailInput, passwordInput);
   // - [x] vergelijken -> wachtwoord correct?
   var emailCorrect = emailInput === fakeEmail;
   var passwordCorrect = passwordInput === fakePassword;
-  console.log("EMAIL CORRECT?", emailCorrect, passwordCorrect);
 
   // - [x] if statement -> if(true) -> welkom else -> pech gehad
   if (emailCorrect && passwordCorrect) {
@@ -41,7 +39,6 @@ knopje.addEventListener("click", function logIn() {
     // - [x] visibility hidden in css
     // - [x] foutmelding selecteren
     var errormessage = document.getElementById("error");
-    console.log(errormessage);
     // - [x] iets in de style aanpassen met javascript
     errormessage.style.visibility = "visible";
   }
