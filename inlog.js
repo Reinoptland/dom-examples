@@ -30,7 +30,9 @@ knopje.addEventListener("click", function logIn() {
   } else {
     // - foutmelding weergeven wanneer het wachtwoord niet klopt
     // - [x] visibility hidden in css
-    // - [ ] foutmelding selecteren
+    // - [x] foutmelding selecteren
+    var errormessage = document.getElementById("error");
+    console.log(errormessage);
     // - [ ] iets in de style aanpassen met javascript
     console.log("PECH GEHAD!");
   }
