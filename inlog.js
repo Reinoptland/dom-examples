@@ -33,8 +33,8 @@ knopje.addEventListener("click", function logIn() {
     // - [x] foutmelding selecteren
     var errormessage = document.getElementById("error");
     console.log(errormessage);
-    // - [ ] iets in de style aanpassen met javascript
-    console.log("PECH GEHAD!");
+    // - [x] iets in de style aanpassen met javascript
+    errormessage.style.visibility = "visible";
   }
 });
 
