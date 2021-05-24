@@ -8,8 +8,8 @@
 
 // - [x] knopje selecteren
 var knopje = document.querySelector("button");
-console.log(knopje);
-// - [ ] event listener toevoegen aan het knopje
+// - [x] event listener toevoegen aan het knopje
+knopje.addEventListener("click");
 // - [ ] ons eigen commando schrijven (functie)
 // - [ ] de inputvelden selecteren
 // - [ ] de waarden van email en password uit de inputs halen
