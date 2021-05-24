@@ -6,6 +6,9 @@
 
 // - javascript om te valideren -> klopt het wachtwoord
 
+// - [x] knopje selecteren
+var knopje = document.querySelector("button");
+console.log(knopje);
 // - [ ] event listener toevoegen aan het knopje
 // - [ ] ons eigen commando schrijven (functie)
 // - [ ] de inputvelden selecteren
