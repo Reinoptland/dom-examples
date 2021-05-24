@@ -19,20 +19,22 @@ knopje.addEventListener("click", function logIn() {
   var emailInput = document.getElementById("emailInput").value;
   var passwordInput = document.getElementById("passwordInput").value;
   console.log(emailInput, passwordInput);
+  // - [x] vergelijken -> wachtwoord correct?
   var emailCorrect = emailInput === fakeEmail;
   var passwordCorrect = passwordInput === fakePassword;
   console.log("EMAIL CORRECT?", emailCorrect, passwordCorrect);
 
+  // - [x] if statement -> if(true) -> welkom else -> pech gehad
   if (emailCorrect && passwordCorrect) {
     console.log("WELKOM!");
   } else {
+    // - foutmelding weergeven wanneer het wachtwoord niet klopt
+    // - [x] visibility hidden in css
+    // - [ ] foutmelding selecteren
+    // - [ ] iets in de style aanpassen met javascript
     console.log("PECH GEHAD!");
   }
 });
-// - [x] vergelijken -> wachtwoord correct?
-// - [x] if statement -> if(true) -> welkom else -> pech gehad
-
-// - foutmelding weergeven wanneer het wachtwoord niet klopt
 
 // - als het wachtwoord wel klopt -> welkom
 
