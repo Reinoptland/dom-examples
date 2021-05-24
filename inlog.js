@@ -9,8 +9,10 @@
 // - [x] knopje selecteren
 var knopje = document.querySelector("button");
 // - [x] event listener toevoegen aan het knopje
-knopje.addEventListener("click");
-// - [ ] ons eigen commando schrijven (functie)
+// - [x] ons eigen commando schrijven (functie)
+knopje.addEventListener("click", function logIn() {
+  console.log("HIER KOMT DE LOGICA");
+});
 // - [ ] de inputvelden selecteren
 // - [ ] de waarden van email en password uit de inputs halen
 // - [ ] vergelijken -> wachtwoord correct?
