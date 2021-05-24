@@ -26,6 +26,12 @@ knopje.addEventListener("click", function logIn() {
 
   // - [x] if statement -> if(true) -> welkom else -> pech gehad
   if (emailCorrect && passwordCorrect) {
+    // - als het wachtwoord wel klopt -> welkom
+    // - [x] hele inlog formulier even groeperen in een divje
+    var loginForm = document.getElementById("login-form");
+    loginForm.style.visibility = "hidden";
+    // - [x] divje selecteren en -> visibility hidden
+    // - [ ] boodschap op de pagina weergeven
     console.log("WELKOM!");
   } else {
     // - foutmelding weergeven wanneer het wachtwoord niet klopt
@@ -37,7 +43,5 @@ knopje.addEventListener("click", function logIn() {
     errormessage.style.visibility = "visible";
   }
 });
-
-// - als het wachtwoord wel klopt -> welkom
 
 // - valideren of iemand een email heeft ingevuld!
